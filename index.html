@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC - App</title>
+  <link rel="stylesheet" href="./assets/estilo.css"/>
+  <!-- Importando box icons -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <main>
+    <div class="text-imc">
+      <h1>Calcule o seu IMC:</h1>
+      <p>O índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada 
+        inclusive pela Organização Mundial da Saúde (OMS), para calcular o chamado 
+        "peso ideal".
+      </p>
+
+      <input type="text" name="alura" id="altura" oninput="formatarDecimal(this)" maxlength="4" required placeholder="Digite a sua altura. Ex: 1.70 (em metros)">
+      <input type="text" name="peso" id="peso"  oninput="formatarDecimal(this)" maxlength="5" required placeholder="Digite o seu peso. Ex: 80.5 (em kg)"/>
+
+      <div class="buttons">
+        <button id="calcular">Calcular</button>
+        <button onclick="reiniciar()">Reiniciar</button>
+      </div>
+    </div>
+
+    <div id="cards" class="grid-template-columns">
+      <div class="card">
+        <i class='bx bx-smile'></i>
+        <h2>Normal</h2>
+        <p>IMC está entre 18.6 e 24.9</p>
+      </div>
+
+      <div class="card magreza">
+        <i class='bx bx-meh-alt'></i>
+        <h2>Magreza</h2>
+        <p>IMC está entre 0 e 18.5</p>
+      </div>
+
+      <div class="card sobrepeso">
+        <i class='bx bx-confused' ></i>
+        <h2>Sobrepeso</h2>
+        <p>IMC está entre 25 e 30</p>
+      </div>
+
+      <div class="card obesidade">
+        <i class='bx bx-dizzy' ></i>
+        <h2>Obesidade</h2>
+        <p>IMC está entre 30.1 e 99</p>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Incluindo arquivo js -->
+  <script src="./src/app.js"></script>
+</body>
+</html>
