@@ -85,6 +85,9 @@ main .text-imc button:nth-child(2){
 .active{
   width: 400px;
   height: 400px;
+  display: flex!important;
+  justify-content: center!important;
+  flex-direction: column!important;
 }
 
 /* ------------ Cards ----------- */
@@ -101,6 +104,7 @@ main .text-imc button:nth-child(2){
   padding: 30px 20px;
 }
 
+#cards .card:nth-child(1)
 #cards .card:nth-child(2),
 #cards .card:nth-child(3),
 #cards .card:nth-child(4){
