@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-imc",
+  "version": "1.0.0",
+  "description": "calculadora de imc",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emanuel Azevedo",
+  "license": "ISC",
+  "type": "module"
+}

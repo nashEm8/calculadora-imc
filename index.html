@@ -19,12 +19,12 @@
         "peso ideal".
       </p>
 
-      <input type="text" name="alura" id="altura" oninput="formatarDecimal(this)" maxlength="4" required placeholder="Digite a sua altura. Ex: 1.70 (em metros)">
-      <input type="text" name="peso" id="peso"  oninput="formatarDecimal(this)" maxlength="5" required placeholder="Digite o seu peso. Ex: 80.5 (em kg)"/>
+      <input type="text" name="alura" id="altura" maxlength="4" required placeholder="Digite a sua altura. Ex: 1.70 (em metros)">
+      <input type="text" name="peso" id="peso" maxlength="5" required placeholder="Digite o seu peso. Ex: 80.5 (em kg)"/>
 
       <div class="buttons">
         <button id="calcular">Calcular</button>
-        <button onclick="reiniciar()">Reiniciar</button>
+        <button id="reiniciar">Reiniciar</button>
       </div>
     </div>
 
@@ -57,6 +57,7 @@
   </main>
 
   <!-- Incluindo arquivo js -->
-  <script src="./src/app.js"></script>
+  <script type="module" src="./src/app.js"></script>
+
 </body>
 </html>
